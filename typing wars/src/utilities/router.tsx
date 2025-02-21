@@ -26,7 +26,7 @@ import axios from "axios";
           try{
           const userid=localStorage.getItem("userId");
           console.log("this is userid",userid);
-          const data=await axios.get(`http://localhost:8000/multiplayer/${params.roomid}/${userid}`)
+          const data=await axios.get(`https://typing-wars.onrender.com/multiplayer/${params.roomid}/${userid}`)
           //console.log(data.data.players);
           console.log(data);
           if(data)
