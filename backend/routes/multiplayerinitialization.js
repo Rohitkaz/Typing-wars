@@ -9,7 +9,7 @@ router.get("/:roomid/:userid",async(req,res)=>{
    try{
     const roomdata=getRoomdata(roomId);
     const roomtext={text:roomdata.text,roomtextindex:roomdata.players.get(userid).roomtextindex};
-    console.log(roomtext);
+    
     if(roomtext)
     {
         return res.status(200).send(roomtext);
