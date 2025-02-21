@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react"
 import socket from "../utilities/socket"
 import { v4 as uuidv4 } from 'uuid';
@@ -39,7 +40,7 @@ const useSocket = () => {
 
         socket.connect()
         
-        const onError = (err: any) => {
+        const onError = (err) => {
             console.log(err)
             navigate("/")
         }
@@ -53,6 +54,6 @@ const useSocket = () => {
     }, [])
 
 
-    return [sc, userId] as const;
+    return [sc, userId] ;
 }
 export default useSocket

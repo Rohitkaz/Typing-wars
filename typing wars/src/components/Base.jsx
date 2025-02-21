@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import useSocket from "../hooks/useSocket";
 
 
-export default function TypingTest({time,updatedata,players,text ,roomtextind}) {
+export default function Base({time,updatedata,players,text ,roomtextind}) {
  // console.log(text);
   const [socket,userId]=useSocket();
   let currIndex;

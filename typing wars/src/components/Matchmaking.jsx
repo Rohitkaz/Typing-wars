@@ -11,7 +11,7 @@ export default function Matchmaking() {
   const [socket,userid]=useSocket();
  console.log(userid);
    useEffect(() => {
-    const matchFoundFn = (roomId:string) => {
+    const matchFoundFn = (roomId) => {
      
       navigate(`/multiplayer/${roomId}`);
     }
